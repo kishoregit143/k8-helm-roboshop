@@ -1,0 +1,5 @@
+configmap:
+  mongoUrl: "mongodb://mongodb:27017/catalogue"
+Deployment:
+  imageRepo: joindevops/catalogue
+  imageversion: v1  
