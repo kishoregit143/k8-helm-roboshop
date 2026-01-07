@@ -68,6 +68,6 @@ spec:
 ports:
     - protocol: tcp
       port: 8080 #services port
-      targetport: 8080  #containers port
+      targetport: "{{ .values.services.targetport }}" #containers port
 
         

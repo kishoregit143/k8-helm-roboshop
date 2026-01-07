@@ -2,4 +2,4 @@ Deployment:
   imageRepo: joindevops/catalogue
   imageversion: v1
 services:
-  type: clusterip
+  tragetport: 8080
