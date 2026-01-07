@@ -1,0 +1,16 @@
+apiversion: v1
+kind: services
+metadata:
+   name: mongodb
+   namespace: mongodb
+spec:
+ type: {{ .values.services.type }}
+ selector:
+   project: roboshop
+   component: mongodb
+   tier: db
+   imagepullpolicy: always
+ports:
+    - protocol: tcp
+      port: 27017 #services port
+      targetport: 27017  #containers port
